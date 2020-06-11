@@ -1,0 +1,38 @@
+
+body {
+    height: 100vh;
+    width: 100wh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    background-color: black;
+}
+    
+/*  game board, will automatically scale to 75% of 
+    page width or height depending on which is smaller */
+
+.board {
+    background-color: blueviolet;
+    width: 75vmin;
+    height: 75vmin;
+    display: grid;
+    /* automatically makes equal cells in a grid format*/
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+}
+
+/* snake */
+
+.snake {
+    background-color: crimson;
+    border: .25vmin solid black;
+}
+
+/* food */
+
+.food {
+    background-color: fuchsia;
+    border: .25vmin solid black;
+
+}
